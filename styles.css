@@ -1,0 +1,346 @@
+/* Reset and basic styling */
+body,
+h1,
+h2,
+h3,
+p,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-color: rgb(247, 245, 240);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid lightgray;
+}
+
+.left-nav {
+    display: flex;
+    gap: 10px
+}
+
+.instacart-logo {
+    height: 20px;
+}
+
+.search-bar {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+/* Buttons */
+.white-btn {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 16px 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.white-btn:hover {
+    background: lightgray;
+}
+
+.green-btn {
+    background-color: #22a745;
+    color: white;
+    border: none;
+    padding: 16px 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.green-btn:hover {
+    background-color: #1c8a38;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: rgb(23, 60, 42);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero>* {
+    padding: 0 100px;
+}
+
+.promo-signup {
+    max-width: 400px;
+}
+
+.promo-signup button {
+    width: 100%;
+}
+
+.offer-picture img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Store options */
+.store-options {
+    padding: 20px;
+}
+
+.store-options>* {
+    padding: 0 100px;
+}
+
+.store-options-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+}
+
+.store-option-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    margin-top: 10px;
+}
+
+.store-option-item {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+
+}
+
+.store-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.store-option-name {
+    font-size: .8rem;
+    margin: 5px 0;
+}
+
+
+
+.hamburger-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    padding: 0;
+}
+
+.hamburger-icon {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Circular button styles */
+.store-option-buttons button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.store-option-buttons button:disabled {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: dimgray
+}
+
+
+.store-option-buttons {
+    display: flex;
+    gap: 10px;
+    /* Space between buttons */
+}
+
+/* Payment method page */
+
+.cart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Side Navigation */
+.side-nav {
+	font-size: 14px;
+    width: 250px;
+    padding: 16px;
+    height: 100vh;
+    position: fixed;
+    border-right: 0.5px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Back and Log out buttons */
+.side-nav .back-btn,
+.side-nav .logout {
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 16px 20px;
+    width: 100%;
+}
+
+.back-btn {
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.side-nav .logout:last-of-type {
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+
+.sidenav-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 80%;
+}
+
+.sidenav-links li {
+    padding: 16px 20px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.sidenav-links li:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sidenav-links li.active {
+    background-color: black;
+    color: white;
+}
+
+/* Payment Methods */
+.payment-methods {
+    margin-left: 280px;
+    padding: 32px;
+}
+
+.payment-methods h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+	padding: 0 10px;
+}
+
+.payment-method-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Reset the list style */
+.payment-method-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Align items and make them clickable */
+.payment-method-item button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 12px 10px;
+    width: 400px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+	border-radius: 8px;
+}
+
+.payment-method-item button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.right-carrot {
+    font-size: 16px;
+    color: gray;
+}
+
+.location-icon,
+.cart-icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.right-nav-payments {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 16px;
+	padding: 8px 12px
+}
+
+.payment-nav {
+    background-color: white;
+}
